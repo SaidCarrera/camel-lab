@@ -18,24 +18,14 @@ El flujo desarrollado permite **leer archivos CSV desde un directorio de entrada
 
 ## Estructura del Proyecto
 
-camel-lab/
-│
-├── input/                # Carpeta de entrada (archivos CSV originales)
-├── output/               # Carpeta de salida (archivos transformados)
-├── archived/             # Carpeta de archivos procesados (histórico)
-├── logs/                 # Carpeta de logs (si se habilita)
-│
-├── src/
-│   ├── main/java/edu/udla/isw/App.java    # Clase principal Camel
-│   └── test/java/edu/udla/isw/AppTest.java
-│
-├── pom.xml               # Configuración de dependencias Maven
-└── README.md             # Este documento
+<img width="694" height="225" alt="image" src="https://github.com/user-attachments/assets/20967561-2a8d-4966-87b6-6a82ea87b47a" />
+
 ---
 
 ## Ejecución del Proyecto
 
 ### Compilar el proyecto
+
 ```bash
 cd ~/camel-lab/camel-lab
 mvn clean compile
@@ -58,4 +48,3 @@ El flujo principal definido en App.java sigue esta lógica:
 	3.	Salida: El archivo transformado se guarda en la carpeta output/.
 	4.	Archivado: El archivo original se mueve a la carpeta archived/.
 	5.	Log: Se imprime en consola el resultado del proceso.
-
